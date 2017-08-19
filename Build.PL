@@ -31,7 +31,9 @@ my $builder = Module::Build->new(
     },
     configure_requires => { 'Module::Build' => 0.38 },
     requires => {
-        'perl'            => '5.008',
+        'perl'                => '5.008',
+        'AnyEvent'            => '7.13',
+        'Protocol::WebSocket' => 0,
     },
     add_to_cleanup      => [ 'App-Hush-*' ],
     meta_merge     => {
